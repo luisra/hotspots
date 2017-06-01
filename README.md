@@ -1,6 +1,6 @@
 # Hotspots of Violent Political Conflict in the African Continent (1997-2010)
 
-Statistical analysis, based on a random sample of violent political conflict events on the African continent. Data sourced from the Armed Conflict Location & Event Data Project [(ACLED)](http://www.acleddata.com/data/). The particular dataset used can be downloaded from [here](https://raw.githubusercontent.com/luisra/hotspots/master/conflictdata.csv).
+Statistical analysis, based on a random sample of violent political conflict events on the African continent. Data sourced from the Armed Conflict Location & Event Data Project [(ACLED)](http://www.acleddata.com/data/). The random sample used for this study can be downloaded from [here](https://raw.githubusercontent.com/luisra/hotspots/master/conflictdata.csv).
 
 ## Synopsis
 
@@ -44,7 +44,7 @@ aov.Events_Year <- aov( events_y ~ types_e + years_e )
 
 ## Motivation
 
-This analysis would allow us to quickly identify in what country a violent political conflict takes place moving forward. Depending on the type of event, instead of considering every country from the get-go, we would focus on the hotspots of violent political activity first.
+This analysis would allow us to quickly identify in what country a violent political conflict is taking place moving forward. Depending on the type of event, instead of considering every country from the get-go, we would focus on the hotspots of political activity first.
 
 ## Installation
 
