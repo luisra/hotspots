@@ -1,6 +1,6 @@
 # Hotspots of Violent Political Conflict in the African Continent (1997-2010)
 
-Statistical analysis, based on a random sample of violent political conflict events on the African continent. Data sourced from the Armed Conflict Location & Event Data Project [(ACLED)](http://www.acleddata.com/data/). The random sample used for this study can be downloaded from [here](https://raw.githubusercontent.com/luisra/hotspots/master/conflictdata.csv).
+Statistical analysis, based on a random sample of violent political conflict events on the African continent. Data sourced from the Armed Conflict Location & Event Data Project [(ACLED)](http://www.acleddata.com/data/). The random sample used for this study can be downloaded [here](https://raw.githubusercontent.com/luisra/hotspots/master/conflictdata.csv).
 
 ## Synopsis
 
@@ -53,6 +53,21 @@ The hotspots.R script performs all aspects of this implementation.
 ## Tests
 
 We chose to verify the ANOVA assumptions before proceeding.
+
+Levene Test for homogeneity of variance:
+```
+leveneTest(events_y ~ types_e)
+```
+
+Switch to nonparametric approach:
+```
+friedman.test(events_y ~ types_e|years_e)
+```
+
+Post-hoc test:
+```
+friedman.test.with.post.hoc(events_y ~ types_e|years_e, data = Master)
+```
 
 ## References
 
