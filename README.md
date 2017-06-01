@@ -59,7 +59,7 @@ Levene Test for homogeneity of variance:
 leveneTest(events_y ~ types_e)
 ```
 
-Switch to nonparametric approach:
+Switch to nonparametric approach.
 ```
 friedman.test(events_y ~ types_e|years_e)
 ```
@@ -67,6 +67,11 @@ friedman.test(events_y ~ types_e|years_e)
 Post-hoc analysis:
 ```
 friedman.test.with.post.hoc(events_y ~ types_e|years_e, data = Master)
+```
+
+Fisher's exact test of independence:
+```
+fisher.test(counts, simulate.p.value = TRUE)
 ```
 
 ## References
