@@ -4,7 +4,7 @@ Statistical analysis, based on a random sample of violent political conflict eve
 
 ## Synopsis
 
-This project aims to evaluate the use of statistics to identify the hotspots of political activity in the African continent (1997-2010). The study is focused on how a two-way ANOVA for a randomized block design is able to identify the hotspots of violent political conflict (per event type) in the African continent.
+This project aims to evaluate the use of statistics to identify the hotspots of political activity in the African continent (1997-2010). The study is focused on how Friedman's test for a randomized block design and Fisher's exact test of independence allow us to identify with confidence the hotspots of violent political conflict (per event type) in the African continent.
 
 ## Code Example
 
