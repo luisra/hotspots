@@ -78,7 +78,7 @@ fisher.test(counts, simulate.p.value = TRUE)
 
 We found a significant difference in the number of conflicts per type of event. There were significantly less riots when compared to battles or violence against civilians. On the other hand, no significant difference between the number of battles and violence against civilians was observed.
 
-In addition, we discovered a relationship between type of event and country. The top five hotspots (per type of event) for violent political conflict in the African continent are given by:
+In addition, we discovered a relationship between type of event and country. The top five hotspots (per type of event) for violent political conflict in the African continent (1997-2010) are given by:
 
 * Battles: Democratic Republic of Congo, Burundi, Sudan, Uganda, and Kenya
 * Violence against civilians: Zimbabwe, Burundi, Kenya, Sudan, and Uganda
