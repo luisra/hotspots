@@ -44,7 +44,7 @@ aov.Events_Year <- aov( events_y ~ types_e + years_e )
 
 ## Motivation
 
-This analysis would allow us to quickly identify in what country a violent political conflict is taking place (moving forward). Depending on the type of event, instead of considering every country from the get-go, we would focus on the hotspots of political activity first.
+Moving forward, this analysis would allow us to quickly identify in what country a violent political conflict is taking place. Depending on the type of event, instead of considering every country from the get-go, we would focus on the hotspots of political activity first.
 
 ## Installation
 
