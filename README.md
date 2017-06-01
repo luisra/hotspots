@@ -4,7 +4,7 @@ Statistical analysis, based on a random sample of violent political conflict eve
 
 ## Synopsis
 
-This project aims to evaluate the use of statistics to identify the hotspots of political activity in the African continent (1997-2010). The study is focused on how Friedman's test for a randomized block design and Fisher's exact test of independence allow us to identify with confidence the hotspots of violent political conflict (per event type) in the African continent.
+This project aims to evaluate the use of statistics to identify the hotspots of political activity in the African continent (1997-2010). The study is focused on how Friedman's test for a randomized block design and Fisher's exact test of independence allow us to identify with confidence the hotspots of violent political conflict (per event type).
 
 ## Code Example
 
@@ -44,7 +44,7 @@ aov.Events_Year <- aov( events_y ~ types_e + years_e )
 
 ## Motivation
 
-Moving forward, this analysis would allow us to quickly identify in what country a violent political conflict is taking place. Depending on the type of event, instead of considering every country from the get-go, we would focus on the hotspots of political activity first.
+Moving forward, this analysis would allow us to quickly identify in what country of the African continent a violent political conflict is taking place. Depending on the type of event, instead of considering every country from the get-go, we would focus on the hotspots of political activity first.
 
 ## Installation
 
