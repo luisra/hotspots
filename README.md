@@ -54,7 +54,7 @@ The hotspots.R script performs all aspects of this implementation.
 
 We chose to verify the ANOVA assumptions before proceeding.
 
-Levene Test for homogeneity of variance:
+Levene test for homogeneity of variance:
 ```
 leveneTest(events_y ~ types_e)
 ```
