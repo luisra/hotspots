@@ -74,6 +74,18 @@ Fisher's exact test of independence:
 fisher.test(counts, simulate.p.value = TRUE)
 ```
 
+## Findings
+
+We found a significant difference in the number of conflicts per type of event. There were significantly less riots when compared to battles or violence against civilians. On the other hand, no significant difference between the number of battles and violence against civilians was observed.
+
+In addition, we discovered a relationship between type of event and country. The top five hotspots (per type of event) for violent political conflict in the African continent are given by:
+
+* Battles: Democratic Republic of Congo, Burundi, Sudan, Uganda, and Kenya
+* Violence against civilians: Zimbabwe, Burundi, Kenya, Sudan, and Uganda
+* Riots: South Africa, Nigeria, Kenya, Ivory Coast, and Zimbabwe
+
+In terms of battles, the Democratic Republic of Congo, Burundi, Sudan, Uganda, and Kenya accounted for around 52% of the activity. In terms of violence against civilians, Zimbabwe, Burundi, Kenya, Sudan, and Uganda accounted for around 56% of the activity. Finally, in terms of riots, South Africa, Nigeria, Kenya, Ivory Coast, and Zimbabwe accounted for around 42% of the activity.
+
 ## References
 
 [1] Galili, A. T. (2010, February 22). Post hoc analysis for Friedman's Test (R code). https://www.r-statistics.com/2010/02/post-hoc-analysis-for-friedmans-test-r-code/
