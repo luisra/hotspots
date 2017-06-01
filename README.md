@@ -1,2 +1,65 @@
-# hotspots
-Hotspots of Violent Political Conflict in the African Continent (1997-2010)
+# Hotspots of Violent Political Conflict in the African Continent (1997-2010)
+
+Statistical analysis, based on a random sample of violent political conflict events on the African continent. Data sourced from the Armed Conflict Location & Event Data Project [(ACLED)](http://www.acleddata.com/data/). The particular dataset used can be downloaded from [here](https://raw.githubusercontent.com/luisra/hotspots/master/conflictdata.csv).
+
+## Synopsis
+
+This project aims to evaluate the use of statistics to identify the hotspots of political activity in the African continent (1997-2010). The study is focused on how a two-way ANOVA, for a randomized block design, is able to identify the hotspots of violent political conflict, per event type, in the African continent.
+
+## Code Example
+
+The following questions guided our analysis:
+* Is there a difference in the number of conflicts per type of event?
+* Is there a relationship between type of event and country?
+
+Summary of events during this timeframe:
+```
+summary(conflict$EventType)
+```
+
+Frequency of events:
+```
+hist(conflict$Year, main = "Number of Political Conflicts", xlab = "Year")
+```
+
+Number of events per year and event type:
+```
+boxplot(events_y ~ years_e, xlab = "Year", ylab = "Number of Conflicts",
+        main = "Violent Political Conflicts from 1997-2010")
+        
+boxplot(events_y ~ types_e, ylab ="Number of Conflicts", xlab = "Type of Event",
+        main = "Violent Political Conflicts from 1997-2010")
+```
+
+Interaction effect between type of event, year, and number of conflicts:
+```
+interaction.plot(years_e, type, events_y, xlab = "Year", ylab = "Number of Conflicts",
+                 main = "Violent Political Conflicts from 1997-2010", legend = TRUE) 
+```
+
+Finally, we set up the two-way ANOVA for a randomized block design.
+```
+aov.Events_Year <- aov( events_y ~ types_e + years_e )
+```
+
+## Motivation
+
+This analysis would allow us to quickly identify in what country a violent political conflict takes place moving forward. Depending on the type of event, instead of considering every country from the get-go, we would focus on the hotspots of violent political activity first.
+
+## Installation
+
+The hotspots.R script performs all aspects of this implementation.
+
+## Tests
+
+We chose to verify the ANOVA assumptions before proceeding.
+
+## References
+
+[1] Galili, A. T. (2010, February 22). Post hoc analysis for Friedman's Test (R code). https://www.r-statistics.com/2010/02/post-hoc-analysis-for-friedmans-test-r-code/
+
+[2] Post-Hoc tests for Friedman Test? (n.d.). http://r.789695.n4.nabble.com/Post-Hoc-tests-for-Friedman-Test-td892886.htmliver
+
+## License
+
+MIT License
