@@ -64,7 +64,7 @@ Switch to nonparametric approach:
 friedman.test(events_y ~ types_e|years_e)
 ```
 
-Post-hoc test:
+Post-hoc analysis:
 ```
 friedman.test.with.post.hoc(events_y ~ types_e|years_e, data = Master)
 ```
